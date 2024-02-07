@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 /* nav */
 .presentation-nav {
     background-color: #FCD4CD;
@@ -35,6 +37,27 @@
     color: #F9FAFC;
     text-align: center;
     padding: 2em;
+    height: 25vh;
+}
+
+.container-text {
+    margin-top: -10px;
+}
+
+.container-text>h1 {
+    font-size: 30px;
+}
+
+.card-text {
+    direction: rtl;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.imgIcon {
+    width: 50px;
+    height: 50px;
 }
 
 /*  footer */
@@ -48,6 +71,7 @@
     padding: 5px;
     position: fixed;
     bottom: 0;
+    height: 10vh;
 }
 
 #container-footer p {
@@ -60,6 +84,7 @@
     justify-content: center;
     align-items: center;
     width: 50vw;
+    margin-top: -15px;
 }
 
 #top {
@@ -67,6 +92,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#top>h1 {
+    margin-top: -10px;
 }
 
 .btn {
@@ -90,9 +119,17 @@
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
+    border: #ccc 3px solid;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
+}
+
+@media(max-width: 700px) {
+    .image-container {
+        width: 350px;
+        height: 150px;
+    }
 }
